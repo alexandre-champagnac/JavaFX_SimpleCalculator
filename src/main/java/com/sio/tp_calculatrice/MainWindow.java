@@ -12,13 +12,15 @@ public class MainWindow extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/MainWindowInterface.fxml")));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/MainWindowInterface.fxml"));
+        Scene scene = new Scene(loader.load());
         scene.setFill(Color.TRANSPARENT);
         stage.setScene(scene);
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.setResizable(false);
         stage.setTitle("AlexCalculChamp");
         stage.getIcons().add(new Image(getClass().getResourceAsStream("/icon.png")));
+        ((MainWindowController)loader.getController()).init(stage);
         stage.show();
     }
 

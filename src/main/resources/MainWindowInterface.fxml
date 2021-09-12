@@ -12,33 +12,169 @@
    <children>
       <Pane layoutX="3.0" layoutY="25.0" prefHeight="578.0" prefWidth="454.0" styleClass="mainPane">
          <children>
-            <Pane layoutX="7.0" layoutY="14.0" prefHeight="127.0" prefWidth="440.0" styleClass="screen_principal_print" />
-            <Pane layoutX="11.0" layoutY="147.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="121.0" layoutY="147.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="233.0" layoutY="147.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="343.0" layoutY="147.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="11.0" layoutY="251.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="121.0" layoutY="251.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="233.0" layoutY="251.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="343.0" layoutY="251.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="11.0" layoutY="357.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="121.0" layoutY="357.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="233.0" layoutY="357.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="343.0" layoutY="357.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="11.0" layoutY="461.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="121.0" layoutY="461.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="233.0" layoutY="461.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
-            <Pane layoutX="343.0" layoutY="461.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="7.0" layoutY="14.0" prefHeight="127.0" prefWidth="440.0" styleClass="screen_principal_print">
+               <children>
+                  <Label fx:id="txtResult" layoutX="354.0" layoutY="64.0" text="0.0" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="11.0" layoutY="147.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="33.0" layoutY="17.0" text="7" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="121.0" layoutY="147.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="38.0" layoutY="16.0" text="8" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="233.0" layoutY="147.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="32.0" layoutY="18.0" text="9" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="343.0" layoutY="147.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="30.0" layoutY="17.0" text="+" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="11.0" layoutY="251.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="33.0" layoutY="17.0" text="4" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="121.0" layoutY="251.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="33.0" layoutY="17.0" text="5" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="233.0" layoutY="251.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="33.0" layoutY="17.0" text="6" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="343.0" layoutY="251.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="40.0" layoutY="17.0" text="-" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="11.0" layoutY="357.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="33.0" layoutY="17.0" text="1" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="121.0" layoutY="357.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="33.0" layoutY="17.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="233.0" layoutY="357.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="33.0" layoutY="17.0" text="3" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="343.0" layoutY="357.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="37.0" layoutY="31.0" prefHeight="21.0" prefWidth="26.0" text="*" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="11.0" layoutY="461.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="33.0" layoutY="17.0" text="C" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="121.0" layoutY="461.0" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="33.0" layoutY="17.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="60.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="233.0" layoutY="461.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="34.0" layoutY="30.0" prefHeight="41.0" prefWidth="33.0" text="=" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="343.0" layoutY="461.0" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print">
+               <children>
+                  <Label layoutX="41.0" layoutY="30.0" prefHeight="30.0" prefWidth="8.0" text="/" textFill="WHITE">
+                     <font>
+                        <Font name="Tw Cen MT" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
          </children>
       </Pane>
-      <Pane prefHeight="24.0" prefWidth="460.0">
+      <Pane fx:id="titlePane" prefHeight="24.0" prefWidth="460.0">
          <children>
-            <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="422.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="btnClose" fitHeight="16.0" fitWidth="16.0" layoutX="422.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@close.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="400.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="btnMinimize" fitHeight="16.0" fitWidth="16.0" layoutX="400.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@hide.png" />
                </image>
@@ -50,7 +186,7 @@
             </Label>
             <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="26.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@istockphoto-1033970852-612x612%20-%20Copie.png" />
+                  <Image url="@logo_klightculator.png" />
                </image>
             </ImageView>
          </children>
