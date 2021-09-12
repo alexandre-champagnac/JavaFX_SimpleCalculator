@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="600.0" prefWidth="460.0" stylesheets="@MainWindow.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sio.tp_calculatrice.MainWindowController">
-
+<AnchorPane prefHeight="611.0" prefWidth="460.0" stylesheets="@MainWindow.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sio.tp_calculatrice.MainWindowController">
+   <children>
+      <Pane layoutX="3.0" layoutY="25.0" prefHeight="578.0" prefWidth="454.0" styleClass="mainPane">
+         <children>
+            <Pane layoutX="7.0" layoutY="14.0" prefHeight="127.0" prefWidth="440.0" styleClass="screen_principal_print" />
+            <Pane layoutX="11.0" layoutY="147.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="121.0" layoutY="147.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="233.0" layoutY="147.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="343.0" layoutY="147.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="11.0" layoutY="251.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="121.0" layoutY="251.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="233.0" layoutY="251.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="343.0" layoutY="251.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="11.0" layoutY="357.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="121.0" layoutY="357.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="233.0" layoutY="357.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="343.0" layoutY="357.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="11.0" layoutY="461.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="121.0" layoutY="461.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="233.0" layoutY="461.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+            <Pane layoutX="343.0" layoutY="461.0" prefHeight="100.0" prefWidth="100.0" styleClass="screen_principal_print" />
+         </children>
+      </Pane>
+      <Pane prefHeight="24.0" prefWidth="460.0">
+         <children>
+            <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="422.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@close.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="400.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@hide.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="50.0" layoutY="1.0" text="Klightculator" textFill="#dab50e">
+               <font>
+                  <Font name="Tw Cen MT" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="26.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@istockphoto-1033970852-612x612%20-%20Copie.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>
